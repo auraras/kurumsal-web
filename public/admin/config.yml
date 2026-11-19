@@ -1,7 +1,10 @@
+
 backend:
   name: github
   repo: auraras/kurumsal-web
-  branch: main
+  branch: master
+  base_url: https://auraras-cms-oauth.efe345859.workers.dev
+  auth_endpoint: auth
 
 media_folder: public/uploads
 public_folder: /uploads
@@ -19,19 +22,15 @@ collections:
           - label: SEO Başlığı
             name: title
             widget: string
-
           - label: SEO Açıklaması
             name: description
             widget: text
-
           - label: Ana Başlık
             name: heroTitle
             widget: string
-
           - label: Ana Açıklama
             name: heroDescription
             widget: text
-
-          - label: Sayfa İçeriği
+          - label: İçerik
             name: body
             widget: markdown
