@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: auraras/auraras
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+locale: tr
+
+collections:
+  - name: pages
+    label: Sayfalar
+    files:
+      - name: home
+        label: Ana Sayfa
+        file: src/content/pages/home.md
+        fields:
+          - label: SEO Başlığı
+            name: title
+            widget: string
+
+          - label: SEO Açıklaması
+            name: description
+            widget: text
+
+          - label: Ana Başlık
+            name: heroTitle
+            widget: string
+
+          - label: Ana Açıklama
+            name: heroDescription
+            widget: text
+
+          - label: Sayfa İçeriği
+            name: body
+            widget: markdown
