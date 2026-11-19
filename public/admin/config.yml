@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: auraras/auraras
+  repo: auraras/kurumsal-web
   branch: main
 
 media_folder: public/uploads
